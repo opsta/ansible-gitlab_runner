@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  author: overskylab
-  description: Ansible role to install and config gitlab ci multi runner
-  company: "Opsta (Thailand) Co., Tld."
+  author: Opsta
+  description: Ansible role to install and config GitLab Runner
+  company: "Opsta (Thailand) Co.,Ltd."
   license: "MIT"
   min_ansible_version: 2.1
   platforms:
@@ -12,5 +12,5 @@ galaxy_info:
     - xenial
   galaxy_tags:
     - gitlab
-    - version control
+    - vcs
 dependencies: []

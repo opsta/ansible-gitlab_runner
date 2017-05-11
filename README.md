@@ -1,4 +1,4 @@
-# Ansible Role: Gitlab CI Multi Runner
+# Ansible Role: Gitlab CI Runner
 
 
 
@@ -27,4 +27,4 @@ MIT
 
 ## Author Information
 
-Overskylab
+Opsta
