@@ -1,8 +1,17 @@
 ---
-- name: Run script for check before install Gitlab Runner (Ubuntu/Debian)
-  shell: "curl -L {{ gitlab_runner_apt_script_url }} | bash"
+- name: Download script for check before install Gitlab Runner (Ubuntu/Debian)
+  get_url:
+    url: "{{ gitlab_runner_apt_script_url }}"
+    dest: /opt/gitlab-install.sh
+    mode: 0755
   when: ansible_os_family == 'Debian'
 
-- name: Run script for check before install Gitlab Runner (CentOS/RHEL)
-  shell: "curl -L {{ gitlab_runner_yum_script_url }} | bash"
+- name: Download script for check before install Gitlab Runner (CentOS/RHEL)
+  get_url:
+    url: "{{ gitlab_runner_yum_script_url }}"
+    dest: /opt/gitlab-install.sh
+    mode: 0755
   when: ansible_os_family == 'RedHat'
+
+- name: Execute script to install GitLab Runner
+  shell: /opt/gitlab-install.sh
