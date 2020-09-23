@@ -1,1 +1,7 @@
 ---
+gitlab_runner_package: gitlab-runner
+
+# gitlab_runner_apt_dependencies: []
+
+gitlab_runner_apt_script_url: https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh
+gitlab_runner_yum_script_url: https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh

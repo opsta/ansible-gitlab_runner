@@ -1,8 +1,3 @@
 ---
-- name: Include OS family specific variables
-  include_vars: "{{ item }}"
-  with_first_found:
-    - "{{ ansible_os_family }}.yml"
-
 - include: gitlab_runner_pre.yml
 - include: gitlab_runner_install.yml

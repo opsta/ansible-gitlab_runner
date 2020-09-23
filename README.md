@@ -1,4 +1,4 @@
-# Ansible Role: Gitlab CI Runner
+# Ansible Role: Gitlab Runner
 
 
 

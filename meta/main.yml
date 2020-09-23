@@ -1,15 +1,20 @@
 ---
 galaxy_info:
+  role_name: gitlab_runner
   author: Opsta
   description: Ansible role to install and config GitLab Runner
   company: "Opsta (Thailand) Co.,Ltd."
   license: "MIT"
-  min_ansible_version: 2.1
+  min_ansible_version: 2.4
   platforms:
   - name: Ubuntu
     versions:
     - trusty
     - xenial
+    - bionic
+  - name: EL
+    versions:
+    - 7
   galaxy_tags:
     - gitlab
     - vcs
