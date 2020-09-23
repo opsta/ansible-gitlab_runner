@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: gitlab_runner
   author: Opsta
   description: Ansible role to install and config GitLab Runner
   company: "Opsta (Thailand) Co.,Ltd."
