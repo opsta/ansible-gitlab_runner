@@ -1,5 +1,5 @@
 ---
 - name: Install Gitlab Runner
-  package:
+  ansible.builtin.package:
     name: "{{ gitlab_runner_package }}"
     state: present
